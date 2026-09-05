@@ -4,7 +4,7 @@ import InteractiveCard from "./InteractiveCard";
 export default function Card(cardInfo: { venueName: string; imgSrc: string }) {
 
   return (
-    <InteractiveCard contentName={cardInfo.venueName}>
+    <InteractiveCard>
       <div className='w-full h-[70%] relative rounded-t-lg overflow-hidden'>
         <Image
           src={cardInfo.imgSrc}

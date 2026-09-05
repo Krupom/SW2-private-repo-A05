@@ -3,11 +3,9 @@
 import React from "react";
 
 export default function InteractiveCard({
-    children,
-    contentName,
+    children
 }: {
     children: React.ReactNode;
-    contentName: string;
 }) {
     function onCardMouseAction(event: React.SyntheticEvent){
         if(event.type == 'mouseover'){
@@ -26,7 +24,7 @@ export default function InteractiveCard({
     }
 
     function onVenueSelected() {
-        alert(`You Selected ${contentName}`);
+        alert(`You Selected Card`);
     }
 
     return (
